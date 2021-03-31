@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "768120870584",
+    "project_id": "abdelkaderprojet",
+    "storage_bucket": "abdelkaderprojet.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:768120870584:android:f1274d6a11e2a4ae44864d",
+        "android_client_info": {
+          "package_name": "dz.ASI.myapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "768120870584-a2bnlvkk613k1ka5o5lhqth7t9tt5c0g.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDl7zUYObkA2QVLZwT8oB0x6YfCky5LvAs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "768120870584-a2bnlvkk613k1ka5o5lhqth7t9tt5c0g.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

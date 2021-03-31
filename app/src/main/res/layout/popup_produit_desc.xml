@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="360dp"
+    android:layout_height="350dp"
+    android:padding="15dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="4dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/image_item"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/c">
+
+        </androidx.appcompat.widget.AppCompatImageView>
+    </androidx.cardview.widget.CardView>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/popup_produit_nom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="nom produit"
+        style="@style/defaultTextStyle"
+        android:layout_marginLeft="@dimen/default_margin"
+        app:layout_constraintBottom_toBottomOf="@+id/cardView"
+        app:layout_constraintStart_toEndOf="@+id/cardView"
+        app:layout_constraintTop_toTopOf="@+id/cardView">
+
+    </com.google.android.material.textview.MaterialTextView>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/close_button"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/ic_close"
+        android:layout_marginRight="@dimen/default_margin"
+        app:layout_constraintBottom_toBottomOf="@+id/cardView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/popup_produit_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/default_margin"
+        style="@style/defaultTextStyle"
+        android:text="Description"
+        app:layout_constraintStart_toStartOf="@+id/cardView"
+        app:layout_constraintTop_toBottomOf="@+id/cardView" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/popup_produit_description_subTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Description sub title"
+        app:layout_constraintStart_toStartOf="@+id/popup_produit_description"
+        app:layout_constraintTop_toBottomOf="@+id/popup_produit_description" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/popup_produit_prix"
+        style="@style/defaultTextStyle"
+        android:layout_marginTop="@dimen/default_margin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="prix"
+        app:layout_constraintStart_toStartOf="@+id/popup_produit_description_subTitle"
+        app:layout_constraintTop_toBottomOf="@+id/popup_produit_description_subTitle" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/popup_produit_prix_subtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" xx DA"
+        app:layout_constraintStart_toStartOf="@+id/popup_produit_prix"
+        app:layout_constraintTop_toBottomOf="@+id/popup_produit_prix" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/button_commander"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="16dp"
+        android:text="Commander"
+        android:textSize="24dp"
+        app:layout_constraintStart_toStartOf="@+id/popup_produit_prix_subtitle"
+        app:layout_constraintTop_toBottomOf="@+id/popup_produit_prix_subtitle" />
+</androidx.constraintlayout.widget.ConstraintLayout>

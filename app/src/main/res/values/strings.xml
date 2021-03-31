@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <!-- Home page -->
+    <string name="home_header">Bienvenue chez Abdelkader</string>
+
+</resources>
